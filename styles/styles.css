@@ -1,0 +1,51 @@
+nav {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-around;
+    height: 20px;
+    padding: 30px;
+    border: 1px solid pink; 
+    background: pink;
+ }
+ 
+ header {
+    margin: 20px 0;
+    text-align: center;
+    background: pink;
+ }
+ 
+ main {
+    display: flex;
+    justify-content: space-between;
+    min-height: 200px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid pink;
+ }
+
+ main .content {
+    width: 100%;
+    text-align: center;
+ }
+ 
+
+ .content .container {
+     display: flex;
+     justify-content: space-evenly;
+ }
+
+ .container .card {
+    min-height: 100px;
+    width: 300px;
+    padding: 10px;
+    margin: 10px 15px;
+    border: 1px solid pink;
+    border-radius: 10px;
+    box-shadow: 3px 3px #fbe9e9;
+ }
+ 
+ aside {
+    max-width: 200px; 
+    border: 1px solid pink;
+ }
