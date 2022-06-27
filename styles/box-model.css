@@ -1,0 +1,56 @@
+body {
+    margin: 0 200px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container .code {
+    justify-self: flex-start;
+}
+
+.container .diagram {
+    display: flex;
+}
+
+pre {
+    display: inline-block;
+    padding: 10px;
+    background: black;
+    color: white;
+}
+
+.box {
+    width: 100px;
+    border: 1px solid red;
+    align-self: center;
+}
+
+.box p {
+    padding: 0;
+    margin: 0;
+    border: 1px solid red;
+    text-align: center;
+}
+
+.box.padding-shorthand-single {
+    padding: 10px;
+}
+
+.box.padding-shorthand-double {
+    padding: 10px 20px;
+}
+
+.box.padding-shorthand-triple {
+    padding: 10px 20px 0;
+}
+
+.box.padding-shorthand-four {
+    padding: 0 10px 20px 30px;
+}
+
+.border-box-sizing {
+    box-sizing: border-box;
+}

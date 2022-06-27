@@ -1,51 +1,80 @@
-nav {
-    position: sticky;
-    top: 0;
-    display: flex;
-    justify-content: space-around;
-    height: 20px;
-    padding: 30px;
-    border: 1px solid pink; 
-    background: pink;
- }
- 
- header {
-    margin: 20px 0;
-    text-align: center;
-    background: pink;
- }
- 
- main {
-    display: flex;
-    justify-content: space-between;
-    min-height: 200px;
-    padding: 10px;
-    box-sizing: border-box;
-    border: 1px solid pink;
- }
-
- main .content {
-    width: 100%;
-    text-align: center;
- }
- 
-
- .content .container {
+.container {
      display: flex;
-     justify-content: space-evenly;
- }
+}
 
- .container .card {
-    min-height: 100px;
-    width: 300px;
-    padding: 10px;
-    margin: 10px 15px;
-    border: 1px solid pink;
-    border-radius: 10px;
-    box-shadow: 3px 3px #fbe9e9;
- }
- 
- aside {
-    max-width: 200px; 
-    border: 1px solid pink;
- }
+.container div {
+	border: 1px solid black;
+	box-sizing: border-box;
+}
+
+/* Two Column Layout */
+.two-column div {
+     width: calc(100% / 2);
+}
+
+.wide-left div:first-child {
+	width: 80%;
+}
+
+.wide-right div:last-child {
+	width: 80%;
+}
+
+/* Multi-Column Layout */
+.three-column div {
+	width: calc(100% / 3);
+}
+
+.four-column div {
+	width: calc(100% / 4);
+}
+
+.five-column div {
+	width: calc(100% / 5);
+}
+
+.six-column div {
+	width: calc(100% / 6);
+}
+
+/* Grids */
+
+.grid-container {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.grid-container div {
+	box-sizing: border-box;
+	border: 1px solid black;
+}
+
+.three-col-grid div {
+	flex-basis: calc(100% / 3);
+}
+
+.three-col-grid.with-gap div {
+	flex-basis: calc((100% - 30px) /3); /* Why are we subtracting 30px? We are taking account the margin we will add.*/
+	margin: 5px;						/* 5px on the all sides means there is a total of 10px for the left and right sides. */
+										/* Since we want three columns for our grid, we will multiply both margins of each element by 3. Thus we get 30px. */
+	
+}
+
+
+/* ID vs Class */
+
+.card {
+	background: pink;
+	border: 1px solid red;
+	padding: 10px;
+	text-align: center;
+}
+
+img {
+	border: 1px solid black;
+	max-width: 100px;
+}
+
+#SpecialImageBanner img {
+	border: 5px dashed red;
+}

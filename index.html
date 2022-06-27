@@ -2,34 +2,53 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Demo</title>
-	<link rel="stylesheet" href="styles/styles.css">
+    <title>Basic Layouting</title>
+	<link rel="stylesheet" href="styles/styles.css" />
+	<link rel="stylesheet" href="styles/mobile-styles.css" />
   </head>
   <body>
-	<nav>
-		<a href="index.html">Home</a>
-		<a href="products.html">Products</a>
-		<a href="about.html">About</a>
-		<a href="contact.html">Contact</a>
-	</nav>
-	<header>
-		<h1>Demo</h1>
-	</header>
-	<main>
-		<div class="content">
-			<p>This is the main content.</p>
-			<div class="container">
-				<div class="card">Card</div>
-				<div class="card">Card</div>
-				<div class="card">Card</div>
-			</div>
-		</div>
-		<aside>
-			<p>This is the sidebar of links.</p>
-		</aside>
-	</main>
-	<footer>
-		<p>Copyright © <a href="about-developer.html">Your Name</a>. All rights reserved.</p>
-	</footer>
+	<h2>Two Columns</h2>
+	<div class="container two-column">
+		<div>Left</div>
+		<div>Right</div>
+	</div>
+	<h2>Three Columns</h2>
+	<div class="container three-column">
+		<div>Left</div>
+		<div>Center</div>
+		<div>Right</div>
+	</div>
+	<h2>Four Columns</h2>
+	<div class="container four-column">
+		<div>Column 1</div>
+		<div>Column 2</div>
+		<div>Column 3</div>
+		<div>Column 4</div>
+	</div>
+	<h2>Grid Container (with gaps)</h2>
+	<div class="grid-container three-col-grid with-gap">
+		<div class="card">Card #1</div>
+		<div class="card">Card #2</div>
+		<div class="card">Card #3</div>
+		<div class="card">Card #4</div>
+		<div class="card">Card #5</div>
+		<div class="card">Card #6</div>
+		<div class="card">Card #7</div>
+		<div class="card">Card #8</div>
+		<div class="card">Card #9</div>
+	</div>
+	
+	<h2>Image using ID vs Not</h2>
+	<div id="SpecialImageBanner">
+		<img src="imgs/special.webp" />
+	</div>
+
+	<img src="imgs/rock.jpg" />
+	<img src="imgs/another-rock.png" />
+
   </body>
 </html>
+
+
+
+

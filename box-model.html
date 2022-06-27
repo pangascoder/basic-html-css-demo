@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Shiny Smiles</title>
+	<link rel="stylesheet" href="styles/box-model.css">
+  </head>
+  <body>
+    <div class="container">
+        <div class="code">
+            <h2>Box Model</h2>
+    <pre>
+div {
+    width: 100px;
+    border: 1px solid red;
+}
+
+div p {
+    border: 1px solid red;
+    text-align: center;
+}
+    </pre>
+        </div>
+        <div class="diagram">
+            <div class="box"><p>Content</p></div>
+        </div>
+    </div>
+    
+    <h2>CSS Shorthands</h2>
+
+    <div class="container">
+        <div class="code">
+            <h3>Single Value</h3>
+            <pre> 
+div {
+    padding: 10px;
+}        
+            </pre>
+        </div>
+        <div class="diagram">
+            <div class="box padding-shorthand-single"><p>Content</p></div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="code">
+            <h3>Double Values</h3>
+            <pre> 
+div {
+    padding: 10px 20px;
+}        
+            </pre>
+        </div>
+        <div class="diagram">
+            <div class="box padding-shorthand-double"><p>Content</p></div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="code">
+            <h3>Triple Values</h3>
+            <pre> 
+div {
+    padding: 10px 20px 0;
+}        
+            </pre>
+        </div>
+        <div class="diagram">
+            <div class="box padding-shorthand-triple"><p>Content</p></div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="code">
+            <h3>Four Values</h3>
+            <pre> 
+div {
+    padding: 0px 10px 20px 30px;
+}        
+            </pre>
+        </div>
+        <div class="diagram">
+            <div class="box padding-shorthand-four"><p>Content</p></div>
+        </div>
+    </div>
+
+    <h2></h2>
+  </body>
+</html>
