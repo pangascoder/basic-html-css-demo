@@ -1,5 +1,5 @@
-body {
-    margin: 0 200px;
+.body-container {
+    margin: 50px 10%;
 }
 
 .container {
@@ -13,10 +13,12 @@ body {
 
 .container .diagram {
     display: flex;
+    min-width: 200px;
 }
 
 pre {
     display: inline-block;
+    min-width: 350px;
     padding: 10px;
     background: black;
     color: white;
@@ -25,7 +27,7 @@ pre {
 .box {
     width: 100px;
     border: 1px solid red;
-    align-self: center;
+    margin: auto;
 }
 
 .box p {

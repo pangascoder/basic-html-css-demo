@@ -1,0 +1,265 @@
+* {
+    box-sizing: border-box;     /* Padding and border size is taken account when setting the width and height of element */
+}
+
+html {
+    scroll-behavior: smooth;    /* Add a smooth animation when scrolling through the different sections of the page */
+}
+
+body {
+	font-family: Verdana, sans-serif;       /* Set default font for all elements to Verdana */
+    margin: 0;                              /* Some browsers add space around body. This make sures there is no space and elements ocuppy the entire width and height of the body element. */
+    padding: 0;
+}
+
+/* Navigation Styles */
+
+nav.main {
+   display: flex;
+   position: sticky;  /* Make the navigation stay visible on top while user is scrolling */
+   top: 0;
+   justify-content: space-between;
+   align-items: center;
+   background: red;
+   color: white;
+}
+
+nav.main .brand-title {
+    font-size: 1.5rem;
+    margin: .5rem;
+}
+
+.nav-links {
+    height: 100%;
+}
+
+.nav-links ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    list-style: none;       /* Remove the bullet style points */
+}
+
+.nav-links li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+}
+
+.nav-links li:hover {
+    background-color: rgb(248, 61, 61);
+}
+
+.toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+}
+
+.toggle-button .bar {      /* Create three white horizontal lines making the burger menu */
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+/* Header Styles */
+
+header {
+   padding: 10px;
+   margin: 20px 0;
+   background: red;
+}
+
+/* Styles for Content */
+
+main {
+	display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+   min-height: 500px;
+   padding: 10px;
+}
+
+main .content {
+   width: 100%;
+   text-align: center;
+}
+
+.content .container {
+   display: flex;
+   justify-content: space-evenly;
+   flex-wrap: wrap;
+}
+
+/* Card Styles */
+
+.container .card {
+   min-height: 100px;
+   max-width: 250px;
+   padding: 50px;
+   margin: 10px 5px;
+   border: 1px solid red;
+   border-radius: 10px;
+   box-shadow: 3px 3px #fbe9e9;
+   font-size: 1.2rem;
+   transition: all 0.5s;     /* Adds an animation effect when hovering on a card */
+}
+
+.container .card:hover {
+    background: red;
+    color: white;
+}
+
+.products-container {
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.product-box {
+    width: 30%;
+    min-width: 400px;
+    padding: 10px;
+    margin: 20px;
+    border: 1px solid red;
+}
+
+.product-box .product-image img {
+    width: 100%;
+}
+
+.product-box .product-description {
+    display: block;
+    text-align: center;
+}
+
+.product-box .product-description .product-price {
+    font-size: 1.5em;
+    font-weight: bolder;
+}
+
+/* Button Styles */
+
+.primary-button {
+    display: inline-block;
+	background: red;
+    border-radius: 20px;
+    text-align: center;
+    padding: 20px;
+	color: white;
+    border: 1px solid red;
+	box-shadow: 3px 3px #ffebeb;
+	cursor: pointer;
+    text-decoration: none;
+}
+
+.primary-button:hover {
+	border: 1px solid red;
+    background-color: white;
+    color: red;
+}
+
+/* Layouting Styles */
+
+.center-wide {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex: 1;
+}
+
+.full-height-container {
+    width: 100vw;
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+}
+
+.two-column > div {
+    width: calc(100% / 2);
+}
+
+/* Typography Styles */
+/* Styles relating to font and text */
+
+.heading {
+    text-align: center;
+    padding-top: 2.5em; 
+    font-size: 1.5em;
+    color: red;
+    margin: 0 auto 2em;
+ }
+
+ .big-text {
+	font-size: 3em;
+}
+
+ .center-text {
+     text-align: center;
+ }
+
+ /* Footer */
+ footer {
+    padding: 10px;
+ }
+
+ footer p {
+    font-size: 0.8em;
+ }
+
+
+/******* Media Queries *******/
+
+
+/*
+320px — 480px: Mobile devices.
+481px — 768px: iPads, Tablets. 
+769px — 1024px: Small screens, laptops.
+1025px — 1200px: Desktops, large screens.
+1201px and more — Extra large screens, TV.
+*/
+
+@media (max-width: 768px) { /* Follow these CSS rules for device with width 768px (tablet) and smaller */
+	
+	nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .toggle-button {
+        display: flex;
+    }
+
+    .nav-links {
+        display: none;
+        width: 100%;
+    }
+
+    .nav-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .nav-links ul li {
+        text-align: center;
+    }
+
+    .nav-links ul li a {
+        padding: .5rem 1rem;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+}

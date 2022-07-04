@@ -1,0 +1,41 @@
+
+.website-preview-box {
+    border: 1px solid black;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.website-preview-box .preview-image {
+    height: 250px;
+    overflow: hidden;    
+    border-radius: 10px 10px 0 0;
+}
+
+.website-preview-box .preview-image img {
+    object-fit: contain;
+    width: 100%;
+    transition: all 1s ease;
+}
+
+.website-preview-box .preview-image:hover img {
+    transform: scale(1.2);
+}
+
+.website-preview-box .website-description {
+    padding: 10px;
+}
+
+.website-preview-box .website-description .button {
+    background: #00467F;
+    padding: 5px 10px;
+    border-radius: 7px;
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.website-preview-box .website-description .button:hover {
+    background: white;
+    color: #00467F;
+    border: 1px solid #00467F;
+}

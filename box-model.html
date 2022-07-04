@@ -3,13 +3,22 @@
   <head>
     <meta charset="utf-8">
     <title>Shiny Smiles</title>
+    <link rel="stylesheet" href="styles/styles.css">
 	<link rel="stylesheet" href="styles/box-model.css">
   </head>
   <body>
-    <div class="container">
-        <div class="code">
-            <h2>Box Model</h2>
-    <pre>
+    <nav>
+		<div class="menu-links">
+            <a href="index.html">Basic Layouting</a>
+			<a href="box-model.html">Box Model</a>
+			<a href="sample-websites.html">Sample Websites</a>
+		</div>
+	</nav>
+    <div class="body-container">
+        <div class="container">
+            <div class="code">
+                <h2>Box Model</h2>
+        <pre>
 div {
     width: 100px;
     border: 1px solid red;
@@ -19,71 +28,70 @@ div p {
     border: 1px solid red;
     text-align: center;
 }
-    </pre>
+        </pre>
+            </div>
+            <div class="diagram">
+                <div class="box"><p>Content</p></div>
+            </div>
         </div>
-        <div class="diagram">
-            <div class="box"><p>Content</p></div>
-        </div>
-    </div>
+        
+        <h2>CSS Shorthands</h2>
     
-    <h2>CSS Shorthands</h2>
-
-    <div class="container">
-        <div class="code">
-            <h3>Single Value</h3>
-            <pre> 
+        <div class="container">
+            <div class="code">
+                <h3>Single Value</h3>
+                <pre> 
 div {
     padding: 10px;
 }        
-            </pre>
+                </pre>
+            </div>
+            <div class="diagram">
+                <div class="box padding-shorthand-single"><p>Content</p></div>
+            </div>
         </div>
-        <div class="diagram">
-            <div class="box padding-shorthand-single"><p>Content</p></div>
-        </div>
-    </div>
-
-    <div class="container">
-        <div class="code">
-            <h3>Double Values</h3>
-            <pre> 
+    
+        <div class="container">
+            <div class="code">
+                <h3>Double Values</h3>
+                <pre> 
 div {
     padding: 10px 20px;
 }        
-            </pre>
+                </pre>
+            </div>
+            <div class="diagram">
+                <div class="box padding-shorthand-double"><p>Content</p></div>
+            </div>
         </div>
-        <div class="diagram">
-            <div class="box padding-shorthand-double"><p>Content</p></div>
-        </div>
-    </div>
-
-    <div class="container">
-        <div class="code">
-            <h3>Triple Values</h3>
-            <pre> 
+    
+        <div class="container">
+            <div class="code">
+                <h3>Triple Values</h3>
+                <pre> 
 div {
     padding: 10px 20px 0;
 }        
-            </pre>
+                </pre>
+            </div>
+            <div class="diagram">
+                <div class="box padding-shorthand-triple"><p>Content</p></div>
+            </div>
         </div>
-        <div class="diagram">
-            <div class="box padding-shorthand-triple"><p>Content</p></div>
-        </div>
-    </div>
-
-    <div class="container">
-        <div class="code">
-            <h3>Four Values</h3>
-            <pre> 
+    
+        <div class="container">
+            <div class="code">
+                <h3>Four Values</h3>
+                <pre> 
 div {
     padding: 0px 10px 20px 30px;
 }        
-            </pre>
-        </div>
-        <div class="diagram">
-            <div class="box padding-shorthand-four"><p>Content</p></div>
+                </pre>
+            </div>
+            <div class="diagram">
+                <div class="box padding-shorthand-four"><p>Content</p></div>
+            </div>
         </div>
     </div>
-
-    <h2></h2>
   </body>
 </html>

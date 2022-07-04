@@ -5,8 +5,39 @@
     <title>Basic Layouting</title>
 	<link rel="stylesheet" href="styles/styles.css" />
 	<link rel="stylesheet" href="styles/mobile-styles.css" />
+	<style>
+		.container > div, .grid-container > div  {
+			border: 1px solid black;
+			box-sizing: border-box;
+		 }
+
+		 /* ID vs Class */
+
+		.card {
+		background: pink;
+		border: 1px solid red;
+		padding: 10px;
+		text-align: center;
+		}
+
+		img {
+		border: 1px solid black;
+		max-width: 100px;
+		}
+
+		#SpecialImageBanner img {
+		border: 5px dashed red;
+		}
+	</style>
   </head>
   <body>
+	<nav>
+		<div class="menu-links">
+			<a href="index.html">Basic Layouting</a>
+			<a href="box-model.html">Box Model</a>
+			<a href="sample-websites.html">Sample Websites</a>
+		</div>
+	</nav>
 	<h2>Two Columns</h2>
 	<div class="container two-column">
 		<div>Left</div>

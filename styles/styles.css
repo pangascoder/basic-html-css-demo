@@ -1,80 +1,83 @@
-.container {
-     display: flex;
+/***************************
+        Navigation
+****************************/
+nav {
+	display: flex;
+	justify-content: flex-end;
+	position: sticky;
+	background: #00467F;
 }
 
-.container div {
-	border: 1px solid black;
-	box-sizing: border-box;
+nav .menu-links {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+nav .menu-links a {
+	color: white;
+	align-self: center;
+	padding: 20px;
+	text-decoration: none;
+}
+
+nav .menu-links a:hover {
+	background: white;
+	color: #00467F;
+}
+
+
+/***************************
+        Layout Styles
+****************************/
+
+.container {
+    display: flex;
 }
 
 /* Two Column Layout */
-.two-column div {
-     width: calc(100% / 2);
+.two-column > div {
+    width: calc(100% / 2);
 }
 
-.wide-left div:first-child {
-	width: 80%;
+.wide-left > div:first-child {
+   width: 80%;
 }
 
-.wide-right div:last-child {
-	width: 80%;
+.wide-right > div:last-child {
+   width: 80%;
 }
 
 /* Multi-Column Layout */
-.three-column div {
-	width: calc(100% / 3);
+.three-column > div {
+   width: calc(100% / 3);
 }
 
-.four-column div {
-	width: calc(100% / 4);
+.four-column > div {
+   width: calc(100% / 4);
 }
 
-.five-column div {
-	width: calc(100% / 5);
+.five-column > div {
+   width: calc(100% / 5);
 }
 
-.six-column div {
-	width: calc(100% / 6);
+.six-column > div {
+   width: calc(100% / 6);
 }
 
 /* Grids */
 
 .grid-container {
-	display: flex;
-	flex-wrap: wrap;
+   display: flex;
+   flex-wrap: wrap;
 }
 
-.grid-container div {
-	box-sizing: border-box;
-	border: 1px solid black;
+.three-col-grid > div {
+   flex-basis: calc(100% / 3);
 }
 
-.three-col-grid div {
-	flex-basis: calc(100% / 3);
-}
-
-.three-col-grid.with-gap div {
-	flex-basis: calc((100% - 30px) /3); /* Why are we subtracting 30px? We are taking account the margin we will add.*/
-	margin: 5px;						/* 5px on the all sides means there is a total of 10px for the left and right sides. */
-										/* Since we want three columns for our grid, we will multiply both margins of each element by 3. Thus we get 30px. */
-	
-}
-
-
-/* ID vs Class */
-
-.card {
-	background: pink;
-	border: 1px solid red;
-	padding: 10px;
-	text-align: center;
-}
-
-img {
-	border: 1px solid black;
-	max-width: 100px;
-}
-
-#SpecialImageBanner img {
-	border: 5px dashed red;
+.three-col-grid.with-gap > div {
+   flex-basis: calc((100% - 30px) /3); /* Why are we subtracting 30px? We are taking account the margin we will add.*/
+   margin: 5px;						/* 5px on the all sides means there is a total of 10px for the left and right sides. */
+                                       /* Since we want three columns for our grid, we will multiply both margins of each element by 3. Thus we get 30px. */
+   
 }
