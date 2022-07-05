@@ -1,3 +1,13 @@
+* {
+   box-sizing: border-box;     /* Padding and border size is taken account when setting the width and height of element */
+}
+
+body {
+	font-family: Verdana, sans-serif;       /* Set default font for all elements to Verdana */
+    margin: 0;                              /* Some browsers add space around body. This make sures there is no space and elements ocuppy the entire width and height of the body element. */
+    padding: 0;
+}
+
 /***************************
         Navigation
 ****************************/
@@ -80,4 +90,14 @@ nav .menu-links a:hover {
    margin: 5px;						/* 5px on the all sides means there is a total of 10px for the left and right sides. */
                                        /* Since we want three columns for our grid, we will multiply both margins of each element by 3. Thus we get 30px. */
    
+}
+
+/***************************
+        Typography
+****************************/
+
+h1 {
+   color: #00467F;
+   text-align: center;
+   margin-bottom: 30px;
 }

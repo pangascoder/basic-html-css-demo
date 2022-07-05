@@ -26,16 +26,17 @@
 }
 
 .website-preview-box .website-description .button {
+    display: inline-block;
     background: #00467F;
-    padding: 5px 10px;
+    padding: 10px 20px;
     border-radius: 7px;
     color: white;
     text-decoration: none;
     transition: all 0.3s ease;
+    border: 1px solid #00467F;
 }
 
 .website-preview-box .website-description .button:hover {
     background: white;
     color: #00467F;
-    border: 1px solid #00467F;
 }

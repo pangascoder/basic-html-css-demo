@@ -1,0 +1,231 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Verdana, sans-serif;       /* Set default font for all elements to Verdana */
+    margin: 0;                              /* Some browsers add space around body. This make sures there is no space and elements ocuppy the entire width and height of the body element. */
+    padding: 0;
+}
+
+nav.main {
+    position: absolute;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background: rgb(255, 79, 108);
+    z-index: 1;
+}
+
+nav.main .brand {
+    display: flex;
+    align-items: center;
+}
+
+nav.main .brand-title {
+    display: inline-block;
+    font-size: 1.5rem;
+    margin: .5rem;
+    color: white;
+}
+
+.nav-links {
+    height: 100%;
+}
+
+.nav-links ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    list-style: none;       /* Remove the bullet style points */
+}
+
+.nav-links li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+}
+
+.nav-links li:nth-child(1):hover a {
+    background-color: orange;
+}
+
+.nav-links li:nth-child(2):hover a {
+    background-color: yellow;
+    color: black;
+}
+
+.nav-links li:nth-child(3):hover a {
+    background-color: green;
+}
+
+.nav-links li:nth-child(4):hover a {
+    background-color: blue;
+}
+
+.nav-links li:nth-child(5):hover a {
+    background-color: skyblue;
+    color: black;
+}
+
+.toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50px;
+    height: 35px;
+    padding: 5px;
+}
+
+.toggle-button .bar {      /* Create three white horizontal lines making the burger menu */
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+#backgroundVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+/* Miscellaneous */
+.heart {
+    display: inline-block;
+    position:relative; 
+    width:50px; 
+    height:50px;
+    margin-top:10px; /* leave some space above */
+}
+
+.heart::before, .heart::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 26px;
+    height: 40px;
+    border-radius: 25px 25px 0 0;
+    background: white;
+}
+
+.heart::before {
+    left: 25px;
+    transform: rotate(-45deg);
+    transform-origin: 0 100%;
+  }
+  
+  .heart::after {
+    left: 0;
+    transform: rotate(45deg);
+    transform-origin: 100% 100%;
+  }
+
+  @media (max-width: 768px) { /* Follow these CSS rules for device with width 768px (tablet) and smaller */
+	
+	nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .toggle-button {
+        display: flex;
+    }
+
+    .nav-links {
+        display: none;
+        width: 100%;
+    }
+
+    .nav-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .nav-links ul li {
+        text-align: center;
+    }
+
+    .nav-links ul li a {
+        padding: .5rem 1rem;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+}
+
+.homepage-content {
+    position: fixed;
+    bottom: 100px;
+    right: 100px;
+    background: rgba(255, 36, 36, 0.9);
+    color: #f1f1f1;
+    padding: 20px;
+}
+
+.video-credit {
+    position: fixed;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+}
+
+.video-credit p, .video-credit a {
+    font-size: 10px;
+    color: #f1f1f1;
+}
+
+.content {
+    margin: 100px 50px 50px;
+}
+
+.primary-button {
+    display: inline-block;
+    background-color: rgb(255, 79, 108);
+    border: 1px solid rgb(255, 79, 108);
+    color: white;
+    padding: 20px 30px;
+    text-decoration: none;
+}
+
+.primary-button:hover {
+    background-color: red;
+}
+
+.lovopoly-example {
+    position: relative;
+    width: fit-content;
+    margin: auto;
+}
+
+.lovopoly-example p {
+    font-size: 0.8em;
+    position: absolute;
+    bottom: 0;
+    background-color: rgb(255, 79, 108);
+    padding: 10px 30px;
+    width: 100%;
+    text-align: right;
+    color: white;
+}
+
+.lovopoly-example a {
+    color: pink;
+}
+
+img.big-image {
+    max-width: 800px;
+    width: 100%;
+}
