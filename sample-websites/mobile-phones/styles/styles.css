@@ -29,6 +29,11 @@ nav.main .brand-title {
     margin: .5rem;
 }
 
+nav.main .brand-title a {
+    color: white;
+    text-decoration: none;
+}
+
 .nav-links {
     height: 100%;
 }
@@ -151,6 +156,7 @@ main .content {
 
 .primary-button {
     display: inline-block;
+    max-height: 65px;
 	background: red;
     border-radius: 20px;
     text-align: center;
@@ -218,6 +224,33 @@ main .content {
     font-size: 0.8em;
  }
 
+/* Page-Specific Styles */
+.single-product-container {
+    width: 100%;
+    display: flex;
+    margin: 50px;
+}
+
+.single-product-container .product-information {
+    position: relative;
+    flex-basis: fit-content;
+}
+
+.single-product-container .product-information #price {
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: red;
+    padding: 10px 30px;
+}
+
+.single-product-container .product-description {
+    margin-left: 50px;
+}
+
 
 /******* Media Queries *******/
 
@@ -261,5 +294,17 @@ main .content {
 
     .nav-links.active {
         display: flex;
+    }
+
+    .single-product-container {
+        flex-wrap: wrap;
+    }
+
+    .single-product-container .product-information img {
+        width: 100%;        /* Make the image responsive */
+    }
+
+    .single-product-container .product-description {
+        margin: 0;
     }
 }
